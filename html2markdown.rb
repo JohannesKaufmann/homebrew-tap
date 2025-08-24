@@ -5,20 +5,20 @@
 class Html2markdown < Formula
   desc ""
   homepage ""
-  version "2.3.3"
+  version "2.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.3.3/html-to-markdown_Darwin_x86_64.tar.gz"
-      sha256 "8681e037f32396051e82a190e88d49b77a010f07ce1346010d0436a0ce60e339"
+      url "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.4.0/html-to-markdown_Darwin_x86_64.tar.gz"
+      sha256 "7171c5b1376d53c88775313f1314348943db326fa7f483e538cd534d7ba4ceba"
 
       def install
         bin.install "html2markdown"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.3.3/html-to-markdown_Darwin_arm64.tar.gz"
-      sha256 "b6b68245dde6a962c3747fbb92cf5ffe84faa12d8612e06864be5c8c2e326b32"
+      url "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.4.0/html-to-markdown_Darwin_arm64.tar.gz"
+      sha256 "e6386fd03836d6e4480b88fd0bce67f1b5dd862ca95c11d2644ecc6cbe8f865a"
 
       def install
         bin.install "html2markdown"
@@ -28,15 +28,15 @@ class Html2markdown < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.3.3/html-to-markdown_Linux_x86_64.tar.gz"
-      sha256 "e817712500628996ff15e5d3475462856ba3b606e04b6992946872ebf5ac173a"
+      url "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.4.0/html-to-markdown_Linux_x86_64.tar.gz"
+      sha256 "ed22e7c6de1c1ec166e2026b4d18519b4151b15d41606362c2d7e8981ad1528d"
       def install
         bin.install "html2markdown"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.3.3/html-to-markdown_Linux_arm64.tar.gz"
-      sha256 "c3638964e5611904914fbb631a6d597ea38ccfb4ab266cf25856a820957e0491"
+      url "https://github.com/JohannesKaufmann/html-to-markdown/releases/download/v2.4.0/html-to-markdown_Linux_arm64.tar.gz"
+      sha256 "52d45368d6dd8e770f4a75cd89c44dbcea99c8b344a2d2ea7025ebfcbc5c91bd"
       def install
         bin.install "html2markdown"
       end
